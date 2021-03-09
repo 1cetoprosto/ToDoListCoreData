@@ -9,23 +9,37 @@
 /* Begin PBXBuildFile section */
 		B139B8A525F0A87B005EF044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139B8A425F0A87B005EF044 /* AppDelegate.swift */; };
 		B139B8A725F0A87B005EF044 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139B8A625F0A87B005EF044 /* SceneDelegate.swift */; };
-		B139B8A925F0A87B005EF044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139B8A825F0A87B005EF044 /* ViewController.swift */; };
 		B139B8AC25F0A87B005EF044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B139B8AA25F0A87B005EF044 /* Main.storyboard */; };
 		B139B8AF25F0A87B005EF044 /* ToDoListCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B139B8AD25F0A87B005EF044 /* ToDoListCoreData.xcdatamodeld */; };
 		B139B8B125F0A87D005EF044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B139B8B025F0A87D005EF044 /* Assets.xcassets */; };
 		B139B8B425F0A87D005EF044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B139B8B225F0A87D005EF044 /* LaunchScreen.storyboard */; };
+		B139B8BD25F0AA87005EF044 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B139B8BC25F0AA87005EF044 /* README.md */; };
+		B139B8C025F0AA99005EF044 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139B8BF25F0AA99005EF044 /* TableViewController.swift */; };
+		B139B8C325F0AAB3005EF044 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139B8C225F0AAB3005EF044 /* Model.swift */; };
+		B1EC2FA125F267B9001EC3FE /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC2F9D25F267B8001EC3FE /* User+CoreDataClass.swift */; };
+		B1EC2FA225F267B9001EC3FE /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC2F9E25F267B8001EC3FE /* User+CoreDataProperties.swift */; };
+		B1EC2FA325F267B9001EC3FE /* Tasks+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC2F9F25F267B8001EC3FE /* Tasks+CoreDataClass.swift */; };
+		B1EC2FA425F267B9001EC3FE /* Tasks+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC2FA025F267B8001EC3FE /* Tasks+CoreDataProperties.swift */; };
+		B1EC2FB325F2A003001EC3FE /* OneTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC2FB225F2A003001EC3FE /* OneTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B139B8A125F0A87B005EF044 /* ToDoListCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B139B8A425F0A87B005EF044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B139B8A625F0A87B005EF044 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B139B8A825F0A87B005EF044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B139B8AB25F0A87B005EF044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B139B8AE25F0A87B005EF044 /* ToDoListCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListCoreData.xcdatamodel; sourceTree = "<group>"; };
 		B139B8B025F0A87D005EF044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B139B8B325F0A87D005EF044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B139B8B525F0A87D005EF044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B139B8BC25F0AA87005EF044 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B139B8BF25F0AA99005EF044 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B139B8C225F0AAB3005EF044 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B1EC2F9D25F267B8001EC3FE /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B1EC2F9E25F267B8001EC3FE /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B1EC2F9F25F267B8001EC3FE /* Tasks+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tasks+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B1EC2FA025F267B8001EC3FE /* Tasks+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tasks+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B1EC2FB225F2A003001EC3FE /* OneTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +56,7 @@
 		B139B89825F0A87B005EF044 = {
 			isa = PBXGroup;
 			children = (
+				B139B8BC25F0AA87005EF044 /* README.md */,
 				B139B8A325F0A87B005EF044 /* ToDoListCoreData */,
 				B139B8A225F0A87B005EF044 /* Products */,
 			);
@@ -58,16 +73,38 @@
 		B139B8A325F0A87B005EF044 /* ToDoListCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				B1EC2FA825F26805001EC3FE /* User */,
+				B1EC2FA625F267F5001EC3FE /* Tasks */,
 				B139B8A425F0A87B005EF044 /* AppDelegate.swift */,
 				B139B8A625F0A87B005EF044 /* SceneDelegate.swift */,
-				B139B8A825F0A87B005EF044 /* ViewController.swift */,
 				B139B8AA25F0A87B005EF044 /* Main.storyboard */,
 				B139B8B025F0A87D005EF044 /* Assets.xcassets */,
 				B139B8B225F0A87D005EF044 /* LaunchScreen.storyboard */,
+				B139B8C225F0AAB3005EF044 /* Model.swift */,
 				B139B8B525F0A87D005EF044 /* Info.plist */,
+				B139B8BF25F0AA99005EF044 /* TableViewController.swift */,
 				B139B8AD25F0A87B005EF044 /* ToDoListCoreData.xcdatamodeld */,
+				B1EC2FB225F2A003001EC3FE /* OneTaskViewController.swift */,
 			);
 			path = ToDoListCoreData;
+			sourceTree = "<group>";
+		};
+		B1EC2FA625F267F5001EC3FE /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				B1EC2F9F25F267B8001EC3FE /* Tasks+CoreDataClass.swift */,
+				B1EC2FA025F267B8001EC3FE /* Tasks+CoreDataProperties.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		B1EC2FA825F26805001EC3FE /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B1EC2F9D25F267B8001EC3FE /* User+CoreDataClass.swift */,
+				B1EC2F9E25F267B8001EC3FE /* User+CoreDataProperties.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +166,7 @@
 			files = (
 				B139B8B425F0A87D005EF044 /* LaunchScreen.storyboard in Resources */,
 				B139B8B125F0A87D005EF044 /* Assets.xcassets in Resources */,
+				B139B8BD25F0AA87005EF044 /* README.md in Resources */,
 				B139B8AC25F0A87B005EF044 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,10 +178,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B139B8A925F0A87B005EF044 /* ViewController.swift in Sources */,
 				B139B8A525F0A87B005EF044 /* AppDelegate.swift in Sources */,
 				B139B8AF25F0A87B005EF044 /* ToDoListCoreData.xcdatamodeld in Sources */,
+				B1EC2FB325F2A003001EC3FE /* OneTaskViewController.swift in Sources */,
+				B1EC2FA125F267B9001EC3FE /* User+CoreDataClass.swift in Sources */,
+				B1EC2FA225F267B9001EC3FE /* User+CoreDataProperties.swift in Sources */,
+				B139B8C325F0AAB3005EF044 /* Model.swift in Sources */,
+				B139B8C025F0AA99005EF044 /* TableViewController.swift in Sources */,
+				B1EC2FA325F267B9001EC3FE /* Tasks+CoreDataClass.swift in Sources */,
 				B139B8A725F0A87B005EF044 /* SceneDelegate.swift in Sources */,
+				B1EC2FA425F267B9001EC3FE /* Tasks+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
