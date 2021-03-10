@@ -47,7 +47,7 @@ class OneTaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //if task != nil {
+        if task != nil {
             taskText.text = task.title
             
             isCompletedSwitch.isOn = task.isCompleted
@@ -66,13 +66,13 @@ class OneTaskViewController: UIViewController {
             importantLabel.selectedSegmentIndex = task.important ? 0 : 1
             urgentlySegmentControl.selectedSegmentIndex = task.urgently ? 0 : 1
 
-        //} else {
+        } else {
 //            let appDelegate = UIApplication.shared.delegate as! AppDelegate
 //            let context = appDelegate.persistentContainer.viewContext
 //            task = (NSEntityDescription.insertNewObject(forEntityName: "Tasks", into: context) as! Tasks)
             //toDoItems.append(task)
             //appDelegate.saveContext()
-        //}
+        }
         
     }
     

@@ -71,9 +71,12 @@ public class Tasks: NSManagedObject {
         //let context = getContext()
         
         let fetchRequest: NSFetchRequest<Tasks> = Tasks.fetchRequest()
-        if !(ID == nil) {
-            fetchRequest.predicate = NSPredicate(format: "taskID==%d", ID! as CVarArg)
+        if let taskId = ID {
+            fetchRequest.predicate = NSPredicate(format: "taskID==%@", taskId as CVarArg)
         }
+//        if !(ID == nil) {
+//            fetchRequest.predicate = NSPredicate(format: "taskID==%d", ID as CVarArg)
+//        }
         
         do {
             let array = try context.fetch(fetchRequest)
