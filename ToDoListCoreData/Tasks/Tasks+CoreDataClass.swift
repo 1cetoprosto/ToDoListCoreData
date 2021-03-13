@@ -51,7 +51,7 @@ public class Tasks: NSManagedObject {
     }
     
     
-    func allRecords() -> [Tasks] {
+    func getRecords() -> [Tasks] {
         
         //let context = getContext()
         
@@ -74,6 +74,26 @@ public class Tasks: NSManagedObject {
         if let taskId = ID {
             fetchRequest.predicate = NSPredicate(format: "taskID==%@", taskId as CVarArg)
         }
+//        if !(ID == nil) {
+//            fetchRequest.predicate = NSPredicate(format: "taskID==%d", ID as CVarArg)
+//        }
+        
+        do {
+            let array = try context.fetch(fetchRequest)
+            return array
+        } catch let error as NSError  {
+            print("Could not read \(error), \(error.userInfo)")
+        }
+        return[]
+    }
+    
+    func getRecords(important: Bool, urgently: Bool) -> [Tasks] {
+        //let context = getContext()
+        
+        let fetchRequest: NSFetchRequest<Tasks> = Tasks.fetchRequest()
+        //if let taskId = ID {
+            fetchRequest.predicate = NSPredicate(format: "important==%@ and urgently==%@", important, urgently)
+        //}
 //        if !(ID == nil) {
 //            fetchRequest.predicate = NSPredicate(format: "taskID==%d", ID as CVarArg)
 //        }
