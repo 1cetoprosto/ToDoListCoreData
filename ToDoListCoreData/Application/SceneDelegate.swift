@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -29,6 +30,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        
+        
+//        Auth.auth().addStateDidChangeListener { (auth, user) in
+//            if user == nil {
+//                self.showModalAuth()
+//                //self.transitionToLogin()
+//                //print("Not a user")
+//            } else {
+//                //print("User: \(user!.email)")
+//            }
+//        }
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
@@ -50,6 +62,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
-
+    func showModalAuth() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let newvc = storyboard.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
+        //self.window?.rootViewController?.navigationController?.pushViewController(newvc, animated: true)
+        self.window?.rootViewController?.present(newvc, animated: false, completion: nil)
+    }
+    
+    func transitionToLogin() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let authViewController = storyboard.instantiateViewController(identifier: "AuthViewController") as? AuthViewController
+        let view = UIView()
+        view.window?.rootViewController = authViewController
+        view.window?.isHidden = false
+        view.window?.makeKeyAndVisible()
+    }
+    
 }
 

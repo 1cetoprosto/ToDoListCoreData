@@ -48,6 +48,7 @@ public class Tasks: NSManagedObject {
         taskObject.taskID = task.taskID
         
         saveContex(context: context)
+        
     }
     
     
@@ -133,6 +134,15 @@ public class Tasks: NSManagedObject {
         }
         
         saveContex(context: context)
+    }
+    
+    func deleteAllRecords() {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = Tasks.fetchRequest()
+        let DelAllReqVar = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        do { try context.execute(DelAllReqVar)
+            saveContex(context: context)
+        }
+        catch { print(error) }
     }
 }
 
