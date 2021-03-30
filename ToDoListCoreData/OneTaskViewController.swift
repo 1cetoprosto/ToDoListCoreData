@@ -19,6 +19,8 @@ class OneTaskViewController: UIViewController {
     @IBOutlet weak var deathLineDatePicker: UIDatePicker!
     @IBOutlet weak var importantLabel: UISegmentedControl!
     @IBOutlet weak var urgentlySegmentControl: UISegmentedControl!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     
     @IBAction func pushSaveAction(_ sender: Any) {
         /*
@@ -54,6 +56,9 @@ class OneTaskViewController: UIViewController {
             importantLabel.selectedSegmentIndex = task.important ? 0 : 1
             urgentlySegmentControl.selectedSegmentIndex = task.urgently ? 0 : 1
             
+            saveButton.layer.cornerRadius = CGFloat(5)
+                                                    
+            cancelButton.layer.cornerRadius = CGFloat(5)
         }
     }
     
